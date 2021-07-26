@@ -57,7 +57,7 @@ To configure bootstrap, angular-cli.json file (in many updated angular version t
             "node_modules/bootstrap/dist/js/bootstrap.js"
            ]
 ```
-
+Just restart the server so that scripts can be updated.
 Now everything's ready and you good to go unless you have to add dropdown menu in your application. In our case we have to. So popper.js is required. Install it using following command.
 
 ```
@@ -72,6 +72,5 @@ And add pooper.min.js to scripts in angular.json file. To do so rewrite the scri
             ]
 ```
 
-
-https://stackoverflow.com/questions/49055721/navbar-drop-down-menu-not-working-with-angular-and-bootstrap-4
+[For more detail on popper visit stackoverflow](https://stackoverflow.com/questions/49055721/navbar-drop-down-menu-not-working-with-angular-and-bootstrap-4)
 The application should starte showing the html file of form-component.
