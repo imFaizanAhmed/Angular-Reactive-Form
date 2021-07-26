@@ -63,5 +63,15 @@ Now everything's ready and you good to go unless you have to add dropdown menu i
 ```
 npm install popper.js --save
 ```
+And add pooper.min.js to scripts in angular.json file. To do so rewrite the scripts to following.
 
+```
+"scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/popper.js/dist/umd/popper.min.js"
+            ]
+```
+
+
+https://stackoverflow.com/questions/49055721/navbar-drop-down-menu-not-working-with-angular-and-bootstrap-4
 The application should starte showing the html file of form-component.
