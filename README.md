@@ -19,6 +19,6 @@ ng new my-app
 After that, I created a component where I'll add my all code related to forms.
 
 ```
-ng generate form
+ng generate component form
 ```
 
