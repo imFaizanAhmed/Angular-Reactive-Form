@@ -6,7 +6,7 @@ So let's create form to get more quality.
 
 The task I was assigned, is to create form like below.
 
-![plot](./Assest/Form to create.jpeg)
+![plot](./Assest/Form\ to\ create.jpeg)
 
 #### Assuming you have installed Angular 8 or above
 
