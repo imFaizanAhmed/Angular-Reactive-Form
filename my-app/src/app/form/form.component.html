@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body >
+
+<div style="padding-top: 1px;">
+  
+  <strong><h4 style="padding-top: 20px; padding-left: 10px">Add New Patient</h4></strong>
+  <strong><hr style="background-color:black;"></strong>
+  <form [formGroup] = "registrationForm" (ngSubmit) = "print()">
+    <div class="container">
+      <div class="row">   
+        <div class="col-sm-4">
+          <div class="flexclass">Personal<span class="dot"></span>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4" >First Name</label>
+              <input type="text" class="form-control" formControlName="firstname" id="inputfname" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4" >Last Name</label>
+              <input type="text" class="form-control" formControlName="lastname" id="inputlname" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputDOB">DOB</label>
+              <input type="date" class="form-control" formControlName="DOB" id="inputAddress" >
+            </div>
+            <div class="form-group col-md-6">
+            <label for="inputgender">Gender</label>
+            <br>
+              <div class="form-row">
+                <div class="form-check">
+                  <input class="form-check-input" formControlName="Gender" style='margin-right: 1in;' type="radio" name="exampleRadios" id="exampleRadios1" value="Male" checked>
+                  <label class="form-check-label" for="exampleRadios1" style='margin-right: 1em;'>
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" formControlName="Gender" name="exampleRadios" id="exampleRadios2" value="Female">
+                  <label class="form-check-label " for="exampleRadios2">
+                    Female
+                  </label>
+                </div>
+              </div>
+          </div>
+         </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCnic">CNIC</label>
+              <input type="number" class="form-control" formControlName="CNIC" id="inputCnic" placeholder="XXXXXXXXXXXXX">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Marital Status</label>
+                          
+              <select style="background-color: white;" formControlName="MaritalStatus" name="Status" id="Status" label="option1" >
+                <option disabled> Select Marital Status </option>
+                <option value="single">single</option>
+                <option value="married">married</option>
+              </select>
+            </div>
+          </div>
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <div class="flexclass">Contact<span class="dot"></span>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Mobile No</label>
+              <input type="number" class="form-control" formControlName="MobileNo" id="inputfname" placeholder="XXXXXXXXX">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Email</label>
+              <input type="text" class="form-control" formControlName="Email" id="inputlname" placeholder="Email">
+            </div>
+          </div>          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputusername">Username</label>
+              <input type="text" class="form-control" formControlName="Username" id="inputfname" placeholder="Username">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" formControlName="Password" id="inputlname" placeholder="Password">
+            </div>
+          </div>  
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" formControlName="Address" id="inputfname" placeholder="Address">
+            </div>
+          </div>          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Country</label>
+              <input type="text" class="form-control" formControlName="Country" id="inputfname" placeholder="Country">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Religion</label>
+              <input type="text" class="form-control" formControlName="Religion" id="inputlname" placeholder="Religion">
+            </div>
+          </div>                  
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <div class="flexclass">Additional Info<span class="dot"></span>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Image</label>
+              <input type="file" formControlName="Image" id="customFile" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Language</label>
+              <input type="text" class="form-control" formControlName="Language" id="Language" placeholder="Language">
+            </div>
+          </div>          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">SSN/ID</label>
+              <input type="text" class="form-control" formControlName="SSN" id="SSN" placeholder="ID">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">External H/N</label>
+              <input type="text" class="form-control" formControlName="ExternalHN" id="ExternalHN" placeholder="External H/N">
+            </div>
+          </div>          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Emergency Name</label>
+              <input type="text" class="form-control" formControlName="EmergencyName" id="EmergencyName" placeholder="Emergency Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Emergency Phone No</label>
+              <input type="number" class="form-control" formControlName="EmergencyPhoneNo" id="EmergencyPhoneNo" placeholder="XXXXXXXXX">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Occupation</label>
+              <input type="text" class="form-control" formControlName="Occupation" id="Occupation" placeholder="Occupation">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Ethnicity</label>
+              <input type="text" class="form-control" formControlName="Ethnicity" id="Ethnicity" placeholder="Ethnicity">
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div> 
+    <strong><hr style="background-color:black;"></strong>
+    <button type="submit" class="btn btn-primary">Submit</button>  
+  </form> 
+</div>
+</body>
+</html>

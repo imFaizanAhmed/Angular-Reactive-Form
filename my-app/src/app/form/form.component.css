@@ -1,0 +1,23 @@
+.main {
+  
+  /* background-color: lightslategrey; */
+  /* height: fit-content; */
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: lightslategrey;
+}
+
+.flexclass{
+  display : flex;    
+} 
+.dot{
+  flex: 1;
+  border-bottom: 1px dashed black;
+  height: 0.6em;
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
