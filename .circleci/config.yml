@@ -1,0 +1,3 @@
+version: 2.1
+orbs: 
+  angular: okode/angular@2.0.13
